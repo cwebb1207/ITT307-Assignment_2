@@ -1,24 +1,52 @@
+<?php
+include('config.php');
+//include objects.php;
+$title = "Home";
+include('includes/header.php');
+?>
 
-# Pages must not contain SQL;
-
-include config.php
-include objects.php
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
 <body>
-<?php include '/includes/header.php'; ?>
-
-
-<?php include __DIR__ . '/includes/footer.php'; ?>    
+    <div id="content">
+    <?php include('includes/nav.php'); ?>
+        <section class = "grid-container-2">
+            <article>
+                <h1>Get Certified Today</h1>
+                <p>We are a well renowned instition of Higher Learning in Jamaica. Come study with us</p>
+            </article>
+            <article>
+                <img src="images/people_certified.png" alt="Certified Persons" width="100%">
+            </article>
+        </section>    
+            <h5>Browse our World-Class, Internationally Accredited Programmes</h5>
+            <a class = "heroButton" href="courses.php">Courses</a>
+            <br><br>
+        <div>
+        </div>
+        <?php include('includes/footer.php'); ?>  
+    </div> <!--content div ends here-->
 </body>
 
 </html>
+
+<?php 
+
+/*
+
+            
+        <?php include('application_form.php'); ?>
+
+
+
+            <?php
+            
+            
+            
+            ?>
+
+
+
+
+
 
 #TO DO
 
@@ -38,8 +66,10 @@ cources Pages
 student page 
     view offered courses, view enrolled courses, // dynamic buttons that only appear on certain senarions
 Admin 
-    add lectureres - add students, add courses
+    add lectureres - add students, add courses.
 
+    */
+?>
 
 
 

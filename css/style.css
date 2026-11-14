@@ -1,1 +1,145 @@
 
+body {
+    background-color: black;
+    font-family: "Roboto", sans-serif;
+}
+#content {
+    text-align: center;
+    background-color: blanchedalmond;
+    margin:auto;
+    width:80%;
+    padding:20px;
+}
+nav{
+    display:inline-flex;
+    z-index: 3;
+    align-items: center;
+    padding-bottom: 7px;
+}
+.admin{
+    color:red;
+}
+
+ nav img{
+    padding:0px;
+    height:100px;
+}
+.nav ul {
+    margin:0;
+    padding:0;
+    overflow:hidden;
+    list-style: none ;
+    display:inline-block;}
+
+.topnav li {
+    padding-left: 1em;
+    float:right;  
+}
+
+.topnav li a {      
+    color: #000;
+    text-decoration: none;
+    display:block;
+    padding: 12px;
+    font-size: 2em;
+}
+
+.topnav li a:hover {
+    cursor: pointer;
+    background-color: #000000;
+    color: white;
+}
+.heroButton{
+    display: inline;
+    color: #F0EDEE;
+    padding: 12px 24px;
+    font-weight: 600;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    background-color: #07393C;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 4px;
+  }
+button:hover, .heroButton:hover {
+  background-color: #2C666E;
+  transform: translateY(-1px);}
+
+.shadow {
+    box-shadow: 1px 1px 5px 5px rgba(235, 230, 230, 0.918);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #1c2829;
+    text-align: center;
+}
+
+h1{
+    font-size: 2.5rem;
+    line-height: 110%;
+}
+
+h5{
+    font-size: 1.64rem;
+    line-height: 110%;
+}
+.large-text{
+    font-size: 1.4rem;
+}
+
+p{
+ line-height: 120%;
+}
+ section{
+    /*border-bottom: 1px solid #000;*/
+ }
+ article{
+  margin: 20px;
+  padding: 20px;
+ }
+
+
+  /*  Grid layout */
+.grid-container-3 {
+    align-content: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    padding: 20px;}
+.grid-container-2 {
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    gap: 20px;
+    padding: 20px;}
+
+
+/* MEDIA QUERY for Grid layout   */
+@media screen and (max-width: 980px){
+    *[class*="grid-container"]{
+        grid-template-columns: 1fr; }
+}
+
+
+/* MEDIA QUERY for Nav   */
+@media (max-width: 60em){
+    .nav ul {
+        margin:0;
+        padding:0;
+        overflow:hidden;
+        }
+    .nav li a {      
+        font-size: 1.25rem;
+    }   
+}
+@media (max-width: 40em){
+    .nav ul {
+        display:flex;
+        flex-direction: column;
+        margin:0;
+        padding:0;
+        overflow:hidden;
+        }
+    .nav li a {      
+        font-size: 1.25rem;
+    }
+}
