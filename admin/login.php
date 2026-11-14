@@ -1,5 +1,5 @@
 <?php
-$title = "About Us";
+$title = "Log in to Admin Dashboard";
 include('includes\header.php');
 ?>
 

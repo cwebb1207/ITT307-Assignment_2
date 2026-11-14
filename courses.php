@@ -15,13 +15,9 @@ include('includes\header.php');
     <div id="content">
     
     <?php include('includes\nav.php'); ?>
-    
-    <form>
-    <label>Search Courses</label><br>
-    <input type="text" name="search" placeholder="Search">
-    </form>
 
-    <h1>Courses Currently Offered</h1>
+    <h1>Department of Information Technology</h1>
+    <h2>Courses Currently Offered</h2>
     <table>
         <thead>
             <tr>

@@ -2,11 +2,10 @@
 <nav id="navigation" class="nav topnav">
     <img src="images/graduation.png" id="logo"/>
     <ul>
-        <li class="admin"><a href="Admin.php" >Admin</a></li>
+        <li class="admin"><a href="adminDashboard.php" >Admin Portal</a></li>
         <li><a href="Courses.php">Courses</a></li>
-        <li><a href="about.php">About Us</a></li>
+        <li><a href="faculty.php">Faculty</a></li>
          <li><a href="index.php">Home</a></li>
-
     </ul>
 </nav>
 <hr>

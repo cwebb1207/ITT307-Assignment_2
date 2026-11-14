@@ -2,7 +2,7 @@
     <hr>
 
         <div class=""  > <!-- Creators -->
-            <span> <sup>&copy;</sup> Copyright 2026 </span> <br><i>All rights reserved by:</i>
+            <span> <sup>&copy;</sup> Copyright 2026 </span> <i>All rights reserved by:</i>
             <br>
             <p></p>
             <b>

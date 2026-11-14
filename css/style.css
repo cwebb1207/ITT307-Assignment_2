@@ -5,7 +5,7 @@ body {
 }
 #content {
     text-align: center;
-    background-color: blanchedalmond;
+    background-color: rgb(253, 253, 253);
     margin:auto;
     width:80%;
     padding:20px;
@@ -49,6 +49,21 @@ nav{
     background-color: #000000;
     color: white;
 }
+
+
+.sidenav {
+    display: flex;
+    flex-direction: column;
+}
+.dashboard-sidebar {
+    width: 250px;
+    min-height: 100vh;
+    color: white;
+    flex-shrink: 0;
+    border-right: 1px solid #ccc;
+}
+
+
 .heroButton{
     display: inline;
     color: #F0EDEE;
@@ -98,10 +113,8 @@ p{
   padding: 20px;
  }
 
-
   /*  Grid layout */
 .grid-container-3 {
-    align-content: center;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 15px;
@@ -113,12 +126,53 @@ p{
     padding: 20px;}
 
 
-/* MEDIA QUERY for Grid layout   */
-@media screen and (max-width: 980px){
-    *[class*="grid-container"]{
-        grid-template-columns: 1fr; }
+    
+/*----------Card CSS-------------------------*/
+.card {
+    /* modified Card from W3 Schools */
+    transition: 0.3s;
+    width: 300px;
+    height: auto;
+    margin: 10px;
+    border: 5px solid #ffd700;
+    overflow: none;
+    text-align: center;
+    box-shadow: 1px 1px 2px #e6e6e6;
+    cursor: default;
+ }
+
+ .card:hover {
+box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+.card .container {
+padding: 2px 16px;
 }
 
+
+/* MEDIA QUERY for Grid layout   */
+@media screen and (max-width: 1200px){
+    *[class*="grid-container"]{   
+    align-content: center;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    padding: 20px;
+    list-style: none ;
+    margin:auto;}
+}
+@media screen and (max-width: 890px){
+    *[class*="grid-container"]{   
+    display:inline-grid;
+    width:100%;
+    align-content: center;
+    grid-template-columns: repeat(1, 1fr);
+    list-style: none ;
+
+    .card {
+        width: 85%;
+    }
+}
+}
 
 /* MEDIA QUERY for Nav   */
 @media (max-width: 60em){
