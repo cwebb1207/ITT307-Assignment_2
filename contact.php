@@ -1,4 +1,5 @@
 <?php
+session_start();
 $title = "Contact The HOD";
 include('includes\header.php');
 ?>
